@@ -3,7 +3,7 @@ $body-color: #227bd4
 
 .main-container
     background-image: linear-gradient(to bottom right, $body-color, #5dadfc)
-    height: 350px
+    height: 450px
     display: flex
     flex-direction: column
     align-items: center
@@ -17,6 +17,7 @@ $body-color: #227bd4
 
 .navbar
     background-color: $base-color !important
+    border-bottom: 1px solid grey
 
     .nav-link
         color: black
@@ -28,11 +29,12 @@ $body-color: #227bd4
         margin-right: 20px
 
 .main-footer
-    background-color: #c7cfd6
+    background-color: #d6d6d6
     height: 100%
     box-shadow: 0 50vh 0 50vh #c7cfd6
     display: flex
     justify-content: center
+    padding-bottom: 30px
 
     .main-footer-title
         margin-top: 20px
@@ -42,3 +44,48 @@ $body-color: #227bd4
         margin-bottom: 4px
         font-size: 12px
         color: grey
+
+.detail-container
+    background-color: white
+    height: 450px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 30px
+
+    .detail-container-heading
+        font-weight: 200
+
+    .detail-card
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        height: 60%
+        width: 80%
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
+        margin-bottom: 30px
+
+        .detail-card-left
+            background-color: #ebebeb
+            height: 100%
+            width: 100%
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            font-size: 12px
+            padding: 25px
+
+            .detail-card-left-text
+                margin-bottom: 7px
+
+        .detail-card-right
+            height: 100%
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 25px

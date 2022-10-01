@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TownController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+    'uses' => 'App\Http\Controllers\TownController@getIndex',
+    'as' => 'town.getIndex'
+]);
+
+Route::get('/{id}', [
+    'uses' => 'App\Http\Controllers\TownController@getTown',
+    'as' => 'town.getTown'
+]);

@@ -3,8 +3,10 @@
 {{--        <a class="navbar-brand ms-lg-5 ms-sm-3 me-xl-5 fs-4 fw-bold" href="#">ArtStore</a>--}}
         <img src="/resources/assets/logo.png" style="margin-left: 45px;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            <svg viewBox="0 0 100 80" width="20" height="20">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
             </svg>
         </button>
         <div class="collapse navbar-collapse ms-xl-5 me-lg-5 justify-content-end align-items-center" id="navbarSupportedContent">
