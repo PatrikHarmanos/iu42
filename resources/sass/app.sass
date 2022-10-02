@@ -1,5 +1,6 @@
 $base-color: white
 $body-color: #227bd4
+$break-point: 700px
 
 body
     min-width: fit-content
@@ -21,7 +22,7 @@ body
     .input-group-lg
         min-width: 400px
 
-    @media only screen and (max-width: 700px)
+    @media only screen and (max-width: $break-point)
         .main-container-title
             font-size: 35px
 
@@ -103,13 +104,13 @@ body
             align-items: center
             padding: 25px
 
-    @media only screen and (max-width: 700px)
+    @media only screen and (max-width: $break-point)
         .detail-card
             flex-direction: column-reverse
 
         .detail-container-heading
             margin-top: 20px
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: $break-point)
     .detail-container
         height: fit-content

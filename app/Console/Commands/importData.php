@@ -93,10 +93,15 @@ class importData extends Command
                         $fax = null;
                     }
                     $address = $town_dom->find('td[valign^=top]', 15)->plaintext . ', ' . $town_dom->find('td[valign^=top]', 16)->plaintext;
-                    $web = $town_dom->find('a[href^=https://www.]', 50)->plaintext;
+                    $web = null;
+                    foreach ($town_dom->find('a[href^=https://www.]') as $link) {
+                        if (str_starts_with($link->plaintext, 'www.')) {
+                            $web = $link->plaintext;
+                        }
+                    }
                     $email = $town_dom->find('a[href^=mailto:]', 0)->plaintext;
 
-                    $town = City::create([
+                    $town = City::firstOrCreate([
                         'name' => $name,
                         'mayor_name' => $mayor,
                         'img_path' => $dbPath,
