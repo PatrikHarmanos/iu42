@@ -1,9 +1,13 @@
 $base-color: white
 $body-color: #227bd4
 
+body
+    min-width: fit-content
+
 .main-container
     background-image: linear-gradient(to bottom right, $body-color, #5dadfc)
     height: 450px
+    width: 100%
     display: flex
     flex-direction: column
     align-items: center
@@ -14,6 +18,15 @@ $body-color: #227bd4
         font-size: 55px
         font-weight: 200
 
+    .input-group-lg
+        min-width: 400px
+
+    @media only screen and (max-width: 700px)
+        .main-container-title
+            font-size: 35px
+
+        .input-group-lg
+            min-width: 250px
 
 .navbar
     background-color: $base-color !important
@@ -89,3 +102,14 @@ $body-color: #227bd4
             justify-content: center
             align-items: center
             padding: 25px
+
+    @media only screen and (max-width: 700px)
+        .detail-card
+            flex-direction: column-reverse
+
+        .detail-container-heading
+            margin-top: 20px
+
+@media only screen and (max-width: 700px)
+    .detail-container
+        height: fit-content

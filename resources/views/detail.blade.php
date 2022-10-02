@@ -21,7 +21,7 @@
                     <p class="detail-card-left-text">{{$town->fax}}</p>
                     <p class="detail-card-left-text">{{$town->email}}</p>
                     <p class="detail-card-left-text">{{$town->web}}</p>
-                    <p class="detail-card-left-text">x, y</p>
+                    <p class="detail-card-left-text">{{$town->latitude}}, {{$town->longitude}}</p>
                 </div>
             </div>
             <div class="detail-card-right">
@@ -29,6 +29,5 @@
                 <h3 class="detail-card-right-town text-primary text-center">{{ $town->name }}</h3>
             </div>
         </div>
-{{--        <h1 class="main-container-title">{{ $town->name }}</h1>--}}
     </section>
 @endsection

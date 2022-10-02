@@ -2,8 +2,8 @@
 
 @section('content')
     <section class="main-container">
-        <h1 class="main-container-title">Vyhľadať v databáze obcí</h1>
-        <div class="input-group-lg mb-3 mb-lg-0 me-lg-3" style="min-width: 400px;">
+        <h1 class="main-container-title text-center">Vyhľadať v databáze obcí</h1>
+        <div class="input-group-lg mb-3 mb-lg-0 me-lg-3">
             <input id="my-input" type="text" list="datalistOptions" class="form-control mt-3" style="border-right: none;" placeholder="Zadajte názov">
             <datalist id="datalistOptions">
                 @foreach($towns as $town)

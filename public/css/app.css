@@ -1,6 +1,12 @@
+body {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
 .main-container {
   background-image: linear-gradient(to bottom right, #227bd4, #5dadfc);
   height: 450px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +16,17 @@
   color: white;
   font-size: 55px;
   font-weight: 200;
+}
+.main-container .input-group-lg {
+  min-width: 400px;
+}
+@media only screen and (max-width: 700px) {
+  .main-container .main-container-title {
+    font-size: 35px;
+  }
+  .main-container .input-group-lg {
+    min-width: 250px;
+  }
 }
 
 .navbar {
@@ -88,4 +105,19 @@
   justify-content: center;
   align-items: center;
   padding: 25px;
+}
+@media only screen and (max-width: 700px) {
+  .detail-container .detail-card {
+    flex-direction: column-reverse;
+  }
+  .detail-container .detail-container-heading {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .detail-container {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
